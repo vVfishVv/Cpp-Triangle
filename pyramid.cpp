@@ -1,8 +1,8 @@
 /*******************************************************
-* FILENAME : pyramid.cpp							   *
-* PROGRAMMERS : Jeremy McClelland & Michael Moore	   *
-* PURPOSE : Creates a pyramid with astericks based 	   *
-* on the int provided by the user					   *
+* FILENAME : pyramid.cpp				*
+* PROGRAMMERS : Jeremy McClelland & Michael Moore	*
+* PURPOSE : Creates a pyramid with astericks based 	*
+* on the int provided by the user			*
 *******************************************************/
 
 // includes
