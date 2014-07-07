@@ -1,6 +1,6 @@
 /*******************************************************
 * FILENAME : pyramid.cpp							   *
-* PROGRAMMERS : Jeremy McClelland &Michael Moore	   *
+* PROGRAMMERS : Jeremy McClelland & Michael Moore	   *
 * PURPOSE : Creates a pyramid with astericks based 	   *
 * on the int provided by the user					   *
 *******************************************************/
@@ -9,6 +9,7 @@
 #include <iostream>
 #include <string>
 #include <stdio.h>
+
 
 using namespace std;
 
@@ -26,9 +27,11 @@ int main()
 	cin >>  n;
 	cout << endl;
 
-	if (n > 35) 
+	while (bigNumber == "Y")
 	{
-		while (bigNumber == "Y")
+		if (n > 35) 
+	
+		
 		{ //begin n if
 			cout << " Wow! That's a large number. This could end up being a crazy pyramid. " << endl;
 			cout << " Would you like to enter a lower number? Y/N" << endl;
@@ -37,9 +40,32 @@ int main()
 			{
 				cout << endl << " Ok. What number would you like to use instead then? " << endl;
 				cin >> n;
-				bigNumber = "N";
-				cout << endl << endl;
+				if (n > 35)
+				{
+					cout << endl;
+					bigNumber = "Y";
+				}
+				else
+				{
+					bigNumber = "N";
+					cout << endl << endl;
+				} //end inner if
 			} //end if
+			else if (bigNumber == "y")
+			{
+				cout << endl << " Ok. What number would you like to use instead then? " << endl;
+				cin >> n;
+				if (n > 35)
+				{
+					cout << endl;
+					bigNumber = "Y";
+				}
+				else
+				{
+					bigNumber = "N";
+					cout << endl << endl;
+				} //end inner if
+			} //end else if
 		} //end while
 	} //end n if
 
