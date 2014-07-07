@@ -1,8 +1,8 @@
 /*******************************************************
-* FILENAME : pyramid.cpp							   *
-* PROGRAMMERS : Jeremy McClelland &Michael Moore	   *
-* PURPOSE : Creates a pyramid with astericks based 	   *
-* on the int provided by the user					   *
+* FILENAME : pyramid.cpp				*
+* PROGRAMMERS : Jeremy McClelland &Michael Moore	*
+* PURPOSE : Creates a pyramid with astericks based 	*
+* on the int provided by the user			*
 *******************************************************/
 
 // includes
@@ -29,7 +29,7 @@ int main()
 	if (n > 35) 
 	{
 		while (bigNumber == "Y")
-		{ //begin n if
+		{
 			cout << " Wow! That's a large number. This could end up being a crazy pyramid. " << endl;
 			cout << " Would you like to enter a lower number? Y/N" << endl;
 			cin >> bigNumber;
